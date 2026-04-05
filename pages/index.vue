@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-useSeoMeta({ title: "Home Page - Diego" });
+useSeoMeta({ title: "Home Page - Urme" });
 definePageMeta({ layout: false });
 import { animatedHeadline } from "@/utils/animatedHeadline";
 import { buttonAnimation } from "@/utils/buttonAnimation";

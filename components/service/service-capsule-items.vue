@@ -25,13 +25,20 @@
 
 <script setup lang="ts">
 const services = [
-  { name: "Frontend", bgColor: "#00CC97" },
-  { name: "Phototyping", bgColor: "#FF759C" },
-  { name: "Design solutions", bgColor: "#FFDB59", textColor: "#121212" },
-  { name: "Consulting", bgColor: "#FFDB59", textColor: "#121212" },
-  { name: "Brand strategy", bgColor: "#00CC97" },
-  { name: "UI/UX Design", bgColor: "#19B3F1" },
-  { name: "Design Audit", bgColor: "#FF759C" },
-  { name: "Testing", bgColor: "#FFDB59", textColor: "#121212" },
+  { name: "Frontend Development", bgColor: "#00CC97" },
+  { name: "React Development", bgColor: "#FF759C" },
+  { name: "Next.js Applications", bgColor: "#FFDB59", textColor: "#121212" },
+  { name: "Responsive Design", bgColor: "#FFDB59", textColor: "#121212" },
+  { name: "UI Implementation", bgColor: "#00CC97" },
+  { name: "Performance Optimization", bgColor: "#19B3F1" },
+  { name: "Bug Fixing & Testing", bgColor: "#FF759C" },
+  { name: "Problem Solving", bgColor: "#FFDB59", textColor: "#121212" },
+  {
+    name: "Cross-Browser Compatibility",
+    bgColor: "#FFDB52",
+    textColor: "#121212",
+  },
+  { name: "Vue.js Development", bgColor: "#FFDB45", textColor: "#121212" },
+  { name: "WordPress (Elementor)", bgColor: "#FFDB22", textColor: "#121212" },
 ];
 </script>

@@ -1,12 +1,12 @@
 <template>
   <section class="tp-about-area fix">
     <div class="container container-large">
-      <div class="tp-about-inner pt-145 pb-80">
+      <div class="tp-about-inner pt-280 pb-80">
         <span class="tp-about-inner-border transition-3"></span>
         <div class="row">
           <div class="col-xl-5 col-lg-5">
             <div class="tp-about-wrapper">
-              <div class="tp-section-title-wrapper p-relative mb-45">
+              <div class="tp-section-title-wrapper p-relative">
                 <span class="tp-section-subtitle-bg">About Me</span>
                 <span
                   class="tp-section-subtitle tp-section-subtitle-1 tp-about-subtitle"
@@ -39,19 +39,20 @@
                           <p>Annual Awards 2020 • awwwards.com</p>
                         </div>
                     </div> -->
-              <div class="tp-about-desc-content mb-40">
+              <div class="tp-about-desc-content">
                 <p>
-                  Hello! I’m <span>Diego</span> a self-taught & award-winning
-                  <span>Digital Designer & Developer</span> with over
-                  <span>fifteen years of work experience</span>. I started in my
-                  children’s room and got pro at renowned digital<span>
-                    nexum AG</span
-                  >
-                  agencies.
+                  Hello! I’m <span>Urme.</span> I craft fast, modern, and
+                  visually refined web experiences as a
+                  <span>Website Designer & Front-end Developer</span> with over
+                  <span> 4+ years of work experience</span>. I specialize in
+                  React, Next.js, Vue.js, Material UI, Tailwind CSS, Bootstrap
+                  5, and SCSS—turning ideas into seamless, high-performance
+                  interfaces. Driven by clean code and thoughtful design, I
+                  build digital products that feel as good as they look.
                 </p>
               </div>
-              <div class="tp-about-fact">
-                <div class="row">
+              <div class="tp-about-fact d-none">
+                <div class="row align-items-center">
                   <div class="col-md-4 col-sm-6 mb-30">
                     <div class="tp-about-fact-item">
                       <h4><counter-item :min="0" :max="180" />+</h4>

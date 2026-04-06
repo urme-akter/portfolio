@@ -29,12 +29,12 @@
     </div>
     <div class="tp-hero-bottom-text-wrapper">
       <div class="tp-hero-bottom-text">
-        <p>Visual designer</p>
-        <p>Visual designer</p>
+        <p>Front-end Developer</p>
+        <p>Front-end Developer</p>
       </div>
       <div class="tp-hero-bottom-text">
-        <p>Visual designer</p>
-        <p>Visual designer</p>
+        <p>Website designer</p>
+        <p>Website designer</p>
       </div>
     </div>
     <div class="container">

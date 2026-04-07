@@ -111,7 +111,7 @@
           <div class="tp-header-box p-relative">
             <div class="row align-items-center">
               <div class="col-xl-2 col-lg-2 col-md-5 col-6">
-                <div class="logo">
+                <!-- <div class="logo">
                   <nuxt-link class="logo-white" href="/">
                     <img
                       style="width: 115px"
@@ -126,7 +126,23 @@
                       alt=""
                     />
                   </nuxt-link>
-                </div>
+                </div> -->
+                <h4
+                  class="fw-bold text-uppercase d-inline-block"
+                  style="
+                    letter-spacing: 2px;
+                    background-image: linear-gradient(
+                      90.68deg,
+                      #bcffa4 8.59%,
+                      #bcffa4 8.59%,
+                      #f59571 86.19%
+                    );
+                    color: transparent;
+                    background-clip: text;
+                  "
+                >
+                  Urme
+                </h4>
               </div>
               <div class="col-xl-6 col-lg-7 d-none d-lg-block">
                 <div class="main-menu">

@@ -42,7 +42,7 @@
                     :class="`${
                       style_2 ? 'tp-btn-white-xl' : 'tp-btn-green'
                     } w-100`"
-                    href="mailto:WriteaMessage"
+                    href="mailto:urmeakter02sm@gmail.com"
                   >
                     <div>
                       <span>Write a Message</span>
@@ -56,7 +56,7 @@
                     :class="`${
                       style_2 ? 'tp-btn-grey-xl' : 'tp-btn-white-xl'
                     } w-100`"
-                    href="/contact"
+                    href="https://wa.me/8801798581950"
                   >
                     <div>
                       <span>Discuss Project</span>
@@ -106,6 +106,6 @@ const props = withDefaults(defineProps<{ cls?: string; style_2?: boolean }>(), {
 const bgImg = ref<string>(
   props.style_2
     ? "/images/footer/overly-bg-2.png"
-    : "/images/skill/bg-distort.png"
+    : "/images/skill/bg-distort.png",
 );
 </script>

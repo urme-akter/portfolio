@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <template v-if="!style_2">
     <div
       v-for="item in footer_social"
@@ -27,28 +27,60 @@
       <span v-html="s.icon"></span>
     </a>
   </div>
-</template>
+</template> -->
 
+<template v-if="!style_2">
+  <div
+    v-for="item in footer_social"
+    :key="item.id"
+    class="col-xl-4 col-lg-4 col-md-6 mb-30"
+  >
+    <a :href="item.link" target="_blank">
+      <div
+        class="tp-footer-social-item d-flex align-items-center justify-content-between"
+      >
+        <span class="tp-footer-anim-border"></span>
+        <div class="tp-footer-social-text z-index-1">
+          <span class="child-1">{{ item.name }}</span>
+          <span class="child-2">{{ item.title }}</span>
+        </div>
+        <div class="tp-footer-social-icon z-index-1">
+          <span v-html="item.icon"></span>
+        </div>
+      </div>
+    </a>
+  </div>
+</template>
 <script setup lang="ts">
 defineProps<{ style_2?: boolean }>();
 const footer_social = [
   {
     id: 1,
-    name: "Behance",
-    title: "@diego_des",
-    icon: `<svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 6H6.83333C8.25 6 9.33333 7.08333 9.33333 8.5C9.33333 9.91667 8.25 11 6.83333 11H1.83333C1.33333 11 1 10.6667 1 10.1667V1.83333C1 1.33333 1.33333 1 1.83333 1H6C7.41667 1 8.5 2.08333 8.5 3.5C8.5 4.91667 7.41667 6 6 6H1Z" stroke="currentcolor" stroke-width="1.5" stroke-miterlimit="10" /> <path d="M10.9997 7.66634H17.6664C17.6664 5.83301 16.1664 4.33301 14.333 4.33301C12.4997 4.33301 10.9997 5.83301 10.9997 7.66634ZM10.9997 7.66634C10.9997 9.49967 12.4997 10.9997 14.333 10.9997H15.7497" stroke="currentcolor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" /> <path d="M15.5831 2.25H13.0831" stroke="currentcolor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" /> </svg>`,
+    name: "Whatsapp",
+    title: "",
+    link: "https://wa.me/8801798581950",
+    icon: `<svg width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.52 3.48A11.82 11.82 0 0 0 12.01 0C5.38 0 .01 5.37.01 12c0 2.11.55 4.17 1.6 5.99L0 24l6.17-1.62A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.52ZM12 21.82c-1.82 0-3.6-.49-5.15-1.42l-.37-.22-3.66.96.98-3.57-.24-.37A9.82 9.82 0 0 1 2.18 12c0-5.41 4.41-9.82 9.82-9.82 2.62 0 5.08 1.02 6.93 2.87A9.73 9.73 0 0 1 21.82 12c0 5.41-4.41 9.82-9.82 9.82Zm5.4-7.36c-.29-.15-1.71-.84-1.98-.94-.27-.1-.46-.15-.66.15-.19.29-.75.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.21-.44-2.3-1.39-.85-.76-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.19.05-.37-.02-.51-.07-.15-.66-1.59-.91-2.18-.24-.57-.48-.49-.66-.5h-.56c-.19 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.84 1.2 3.03.15.19 2.07 3.16 5.02 4.43.7.3 1.24.48 1.66.62.7.22 1.34.19 1.85.12.56-.08 1.71-.7 1.95-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34Z" fill="currentColor"/>
+  </svg>`,
   },
   {
     id: 2,
-    name: "Dribble",
-    title: "@diego_des",
-    icon: `<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M2.07295 12.9993C4.28172 16.825 9.17363 18.1358 12.9993 15.927C14.5588 15.0267 15.7003 13.6806 16.356 12.1425C17.3088 9.90737 17.2355 7.26695 15.927 5.00067C14.6186 2.73439 12.3686 1.35064 9.95647 1.05826C8.29667 0.857067 6.56009 1.17262 5.00067 2.07295C1.17497 4.28172 -0.135817 9.17363 2.07295 12.9993Z" stroke="currentcolor" stroke-width="1.5" /> <path d="M12.9595 15.8578C12.9595 15.8578 12.2084 10.5858 10.6004 7.80063C8.99241 5.01548 5.04119 2.14298 5.04119 2.14298M5.46266 16.0532C6.64777 12.478 12.5618 8.51493 16.8898 9.46439M12.5309 1.96875C11.3408 5.505 5.54035 9.41017 1.23254 8.56176" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" /> </svg>`,
+    name: "Gmail",
+    title: "",
+    link: "mailto:urmeakter02sm@gmail.com",
+    icon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 6.5L12 13.5L22 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M3.5 5H20.5C21.33 5 22 5.67 22 6.5V17.5C22 18.33 21.33 19 20.5 19H3.5C2.67 19 2 18.33 2 17.5V6.5C2 5.67 2.67 5 3.5 5Z" stroke="currentColor" stroke-width="1.5"/>
+  </svg>`,
   },
   {
     id: 3,
-    name: "Instagram",
-    title: "@diego_des",
-    icon: `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.5 1H4.5C2.567 1 1 2.567 1 4.5V11.5C1 13.433 2.567 15 4.5 15H11.5C13.433 15 15 13.433 15 11.5V4.5C15 2.567 13.433 1 11.5 1Z" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path  d="M10.8002 7.55921C10.8866 8.14178 10.7871 8.73676 10.5158 9.25952C10.2446 9.78228 9.81539 10.2062 9.28932 10.471C8.76326 10.7358 8.1671 10.8279 7.58564 10.7344C7.00417 10.6408 6.46702 10.3663 6.05057 9.94982C5.63413 9.53338 5.3596 8.99622 5.26603 8.41476C5.17247 7.8333 5.26463 7.23714 5.52941 6.71107C5.7942 6.18501 6.21812 5.75583 6.74087 5.48458C7.26363 5.21333 7.85861 5.11382 8.44119 5.20021C9.03543 5.28833 9.58558 5.56524 10.0104 5.99003C10.4352 6.41482 10.7121 6.96496 10.8002 7.55921Z" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> <path d="M11.8499 4.15137H11.8599" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /> </svg>`,
+    name: "Phone",
+    title: "",
+    link: "tel:+8801798581950",
+    icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22 16.92V20C22 20.55 21.55 21 21 21C10.51 21 3 13.49 3 3C3 2.45 3.45 2 4 2H7.09C7.57 2 7.99 2.34 8.07 2.81L8.57 6.11C8.65 6.57 8.44 7.03 8.03 7.26L5.91 8.5C7.23 11.09 9.91 13.77 12.5 15.09L13.74 12.97C13.97 12.56 14.43 12.35 14.89 12.43L18.19 12.93C18.66 13.01 19 13.43 19 13.91V16.92C19 17.47 18.55 17.92 18 17.92H22Z" fill="currentColor"/>
+  </svg>`,
   },
 ];
 

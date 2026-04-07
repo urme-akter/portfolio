@@ -3,4 +3,5 @@ export interface IPortfolioDT {
   img: string;
   title: string;
   category: string;
+  link?: string;
 }

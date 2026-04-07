@@ -1,14 +1,12 @@
 import type { IMenuDT } from "@/types/menu-d-t";
 
-// menu data 
+// menu data
 const menu_data: IMenuDT[] = [
   {
     id: 1,
     title: "Home",
     link: "#",
     home_dropdown: false,
-
-
   },
   {
     id: 2,
@@ -22,21 +20,12 @@ const menu_data: IMenuDT[] = [
     title: "Services",
     link: "#",
     has_dropdown: true,
-
   },
   {
     id: 4,
-    title: "Portfolio",
+    title: "Project",
     link: "#",
     has_dropdown: true,
-
-  },
-  {
-    id: 5,
-    title: "Blog",
-    link: "#",
-    has_dropdown: true,
-
   },
   {
     id: 6,

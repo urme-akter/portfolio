@@ -27,11 +27,11 @@ const menu_data: IMenuDT[] = [
     link: "#",
     has_dropdown: true,
   },
-  {
-    id: 6,
-    title: "Contact",
-    link: "#contact",
-    has_dropdown: false,
-  },
+  // {
+  //   id: 6,
+  //   title: "Contact",
+  //   link: "#contact",
+  //   has_dropdown: false,
+  // },
 ];
 export default menu_data;

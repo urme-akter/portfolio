@@ -1,15 +1,21 @@
 <template>
   <div>
     <header>
-      <div class="tp-header-area tp-header-mob-space tp-header-transparent p-relative">
+      <div
+        class="tp-header-area tp-header-mob-space tp-header-transparent p-relative"
+      >
         <span class="tp-header-border" style="width: 100%"></span>
         <div class="container container-large">
           <div class="tp-header-box p-relative">
             <div class="row align-items-center">
               <div class="col-xl-2 col-lg-2 col-md-5 col-6">
-                <div class="logo">
+                <!-- <div class="logo">
                   <nuxt-link class="logo-white" href="/">
-                    <img src="/images/logo/logo.png" alt="" style="width: 115px" />
+                    <img
+                      src="/images/logo/logo.png"
+                      alt=""
+                      style="width: 115px"
+                    />
                   </nuxt-link>
                   <nuxt-link class="logo-black" href="/">
                     <img
@@ -18,7 +24,23 @@
                       alt=""
                     />
                   </nuxt-link>
-                </div>
+                </div> -->
+                <h4
+                  class="fw-bold text-uppercase d-inline-block"
+                  style="
+                    letter-spacing: 2px;
+                    background-image: linear-gradient(
+                      90.68deg,
+                      #bcffa4 8.59%,
+                      #bcffa4 8.59%,
+                      #f59571 86.19%
+                    );
+                    color: transparent;
+                    background-clip: text;
+                  "
+                >
+                  Urme
+                </h4>
               </div>
               <div class="col-xl-6 col-lg-7 d-none d-lg-block">
                 <div class="main-menu">
@@ -30,7 +52,9 @@
                 </div>
               </div>
               <div class="col-xl-4 col-lg-3 col-md-7 col-6">
-                <div class="tp-header-right d-flex align-items-center justify-content-end">
+                <div
+                  class="tp-header-right d-flex align-items-center justify-content-end"
+                >
                   <div class="tp-theme-toggle">
                     <label
                       class="tp-theme-toggle-main themepure-theme-toggle"
@@ -51,7 +75,11 @@
                     </label>
                   </div>
                   <div class="tp-header-cv ml-10 d-none d-md-block">
-                    <a class="tp-header-cv-btn" href="/images/cv/mycv.docx">
+                    <a
+                      class="tp-header-cv-btn"
+                      href="/images/cv/urme-cv.pdf"
+                      download="urme-CV.pdf"
+                    >
                       <svg-download />
                     </a>
                   </div>
@@ -75,14 +103,21 @@
 
     <!-- header area start -->
     <header>
-      <div id="sticky-header" :class="`tp-header-area tp-header-mob-space tp-header-transparent p-relative tp-int-menu tp-header-sticky-cloned ${isStickyVisible && sticky?'tp-header-pinned':''}`">
+      <div
+        id="sticky-header"
+        :class="`tp-header-area tp-header-mob-space tp-header-transparent p-relative tp-int-menu tp-header-sticky-cloned ${isStickyVisible && sticky ? 'tp-header-pinned' : ''}`"
+      >
         <div class="container container-large">
           <div class="tp-header-box p-relative">
             <div class="row align-items-center">
               <div class="col-xl-2 col-lg-2 col-md-5 col-6">
                 <div class="logo">
                   <nuxt-link class="logo-white" href="/">
-                    <img style="width: 115px" src="/images/logo/logo.png" alt="" />
+                    <img
+                      style="width: 115px"
+                      src="/images/logo/logo.png"
+                      alt=""
+                    />
                   </nuxt-link>
                   <nuxt-link class="logo-black" href="/">
                     <img
@@ -103,10 +138,13 @@
                 </div>
               </div>
               <div class="col-xl-4 col-lg-3 col-md-7 col-6">
-                <div class="tp-header-right d-flex align-items-center justify-content-end">
+                <div
+                  class="tp-header-right d-flex align-items-center justify-content-end"
+                >
                   <div class="tp-theme-toggle">
                     <label
-                      for="this-ss" :class="`tp-theme-toggle-main themepure-theme-toggle ${isActive ? 'dark-active' : 'light-active'}`"
+                      for="this-ss"
+                      :class="`tp-theme-toggle-main themepure-theme-toggle ${isActive ? 'dark-active' : 'light-active'}`"
                       @change="toggleTheme"
                     >
                       <span class="tp-theme-toggle-light">
@@ -148,13 +186,16 @@
   </div>
 
   <!-- offcanvas area start -->
-  <offcanvas-two :isOffCanvasOpen="isOffCanvasOpen" @close-offcanvas="handleOffCanvas"/>
+  <offcanvas-two
+    :isOffCanvasOpen="isOffCanvasOpen"
+    @close-offcanvas="handleOffCanvas"
+  />
   <!-- offcanvas area end -->
 </template>
 
 <script setup lang="ts">
-const {sticky,isStickyVisible} = useSticky();
-const {isActive,toggleTheme,tpInitTheme} = useThemeToggle();
+const { sticky, isStickyVisible } = useSticky();
+const { isActive, toggleTheme, tpInitTheme } = useThemeToggle();
 
 const isOffCanvasOpen = ref<boolean>(false);
 
@@ -163,8 +204,10 @@ const handleOffCanvas = () => {
 };
 
 onMounted(() => {
-    tpInitTheme();
-    const themeInput = document.querySelector('.themepure-theme-toggle-input') as HTMLInputElement;
-    themeInput.addEventListener('change', toggleTheme);
-})
+  tpInitTheme();
+  const themeInput = document.querySelector(
+    ".themepure-theme-toggle-input",
+  ) as HTMLInputElement;
+  themeInput.addEventListener("change", toggleTheme);
+});
 </script>

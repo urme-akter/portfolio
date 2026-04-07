@@ -11,14 +11,14 @@ const portfolio_data: IPortfolioDT[] = [
   {
     id: 2,
     img: "/images/portfolio/portfolio-3.jpg",
-    title: "Salonzz(Only For Mobile View)",
+    title: "Salonzz(Only For Mobile View- work in progress)",
     category: "View Project",
     link: "https://salon-alpha.vercel.app/",
   },
   {
     id: 3,
     img: "/images/portfolio/portfolio-1.jpg",
-    title: "Portfolio",
+    title: "Portfolio(work in progress)",
     category: "View Project",
     link: "#",
   },

@@ -43,9 +43,9 @@
           </div>
         </div>
         <div class="tp-main-menu-mobile menu-hover-active counter-row">
-          <nav>
+          <!-- <nav>
             <offcanvas-menus />
-          </nav>
+          </nav> -->
         </div>
       </div>
       <div class="tp-offcanvas-right d-none d-md-block">

@@ -44,7 +44,7 @@
                   Hello! I’m <span>Urme.</span> I craft fast, modern, and
                   visually refined web experiences as a
                   <span>Website Designer & Front-end Developer</span> with over
-                  <span> 4+ years of work experience</span>. I specialize in
+                  <span> 3.8+ years of work experience</span>. I specialize in
                   React, Next.js, Vue.js, Material UI, Tailwind CSS, Bootstrap
                   5, and SCSS—turning ideas into seamless, high-performance
                   interfaces. Driven by clean code and thoughtful design, I

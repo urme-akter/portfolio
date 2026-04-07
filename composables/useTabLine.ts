@@ -1,45 +1,47 @@
-
 export default function useTabLine() {
-
   const activeRef = ref<HTMLButtonElement | null>(null);
   const marker = ref<HTMLSpanElement | null>(null);
-  const activeTab = ref('home');
+  const activeTab = ref("home");
 
   function tpTabLine2() {
-    const marker = document.querySelector('#lineMarker') as HTMLElement;
-    const item = document.querySelectorAll('.tp-marker-tab button') as NodeListOf<HTMLButtonElement>;
-  
+    const marker = document.querySelector("#lineMarker") as HTMLElement;
+    const item = document.querySelectorAll(
+      ".tp-marker-tab button",
+    ) as NodeListOf<HTMLButtonElement>;
+
     // Initialize the marker position and width
     function initializeMarker() {
-      const initiallyActive = document.querySelector('.tp-marker-tab .nav-link.active') as HTMLElement;
+      const initiallyActive = document.querySelector(
+        ".tp-marker-tab .nav-link.active",
+      ) as HTMLElement;
       if (initiallyActive) {
         updateMarker(initiallyActive);
       }
     }
-  
+
     // Update the marker position and width based on the target element
     function updateMarker(target: HTMLElement) {
-      marker.style.left = target.offsetLeft + 'px';
-      marker.style.width = target.offsetWidth + 'px';
+      marker.style.left = target.offsetLeft + "px";
+      marker.style.width = target.offsetWidth + "px";
     }
-  
+
     // Add event listeners to each item to update the marker on click
     function addEventListeners() {
-      item.forEach(link => {
-        link.addEventListener('click', (e) => {
+      item.forEach((link) => {
+        link.addEventListener("click", (e) => {
           updateMarker(e.target as HTMLElement);
         });
       });
     }
     function showMarker() {
-      marker.style.display = 'block';
+      marker.style.display = "block";
     }
     function calculateAnchorWidths() {
       let anchorWidths = 0;
-  
+
       item.forEach((elem) => {
-        const activeTest = elem.classList.contains('active');
-  
+        const activeTest = elem.classList.contains("active");
+
         if (!activeTest) {
           const parentElement = elem.parentElement as HTMLElement;
           const computedStyle = getComputedStyle(parentElement);
@@ -56,12 +58,10 @@ export default function useTabLine() {
     addEventListeners();
     showMarker();
     return calculateAnchorWidths();
-  };
-  
-  watch(activeTab, () => {
-   
-  });
-  
+  }
+
+  watch(activeTab, () => {});
+
   const handleActiveTab = (e: MouseEvent, tab: string) => {
     activeTab.value = tab;
     const buttonElement = e.target as HTMLButtonElement;
@@ -70,7 +70,7 @@ export default function useTabLine() {
       marker.value.style.width = buttonElement.offsetWidth + "px";
     }
   };
-  
+
   onMounted(() => {
     const nav_active = document.getElementById("home-tab");
     const marker = document.getElementById("blog-btn-bg");
@@ -79,12 +79,12 @@ export default function useTabLine() {
       marker.style.width = nav_active.offsetWidth + "px";
     }
   });
-  
+
   return {
     tpTabLine2,
     activeRef,
     marker,
     activeTab,
     handleActiveTab,
-  }
+  };
 }

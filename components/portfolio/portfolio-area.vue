@@ -30,12 +30,12 @@
               class="tp-portfolio-more tp-hover-btn-wrapper tp-btn-bounce-2 d-none d-lg-block"
             >
               <nuxt-link
-                href="#"
+                href="https://wa.me/8801798581950"
                 class="tp-hover-btn tp-hover-btn-item tp-btn-circle-2 d-flex align-items-center justify-content-center flex-column"
               >
                 <span class="tp-btn-circle-text-2">
-                  Upcoming<br />
-                  More Projects
+                  Get <br />
+                  In Touch
                   <span class="tp-btn-circle-arrow-2">
                     <svg-circle-2 />
                   </span>

@@ -86,7 +86,7 @@
               <div class="tp-hero-btn wrap">
                 <div class="tp-hover-btn-wrapper tp-btn-bounce">
                   <nuxt-link
-                    href="/contact"
+                    href="https://wa.me/8801798581950"
                     class="tp-hover-btn tp-hover-btn-item tp-btn-circle square"
                   >
                     <span class="tp-btn-circle-text">
@@ -121,7 +121,7 @@
                 alt=""
               />
               <img
-                class="tp-hero-thumb-shape-2 d-none d-xl-block"
+                class="tp-hero-thumb-shape-2 d-xl-block"
                 data-speed="1.2"
                 src="/images/hero/shape/hero-shape-2.png"
                 alt=""

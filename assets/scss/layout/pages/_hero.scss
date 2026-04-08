@@ -27,8 +27,8 @@
       padding-bottom: 40px;
     }
     @media #{$xs} {
-      padding-top: 150px;
-      padding-bottom: 70px;
+      padding-top: 130px;
+      padding-bottom: 0;
     }
   }
   &-content {
@@ -116,18 +116,19 @@
       }
 
       &-1 {
-        left: -7%;
-        top: 23%;
+        left: 6%;
+        top: 12%;
         @media #{$md} {
           left: 10%;
         }
         @media #{$xs} {
-          display: none;
+          // display: none;
+          display: block;
         }
       }
       &-2 {
-        right: -8%;
-        top: 28%;
+        right: 6%;
+        top: -16%;
         @media #{$md} {
           right: 1%;
           top: -8%;

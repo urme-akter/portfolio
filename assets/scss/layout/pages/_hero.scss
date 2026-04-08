@@ -116,22 +116,28 @@
       }
 
       &-1 {
-        left: 6%;
-        top: 12%;
+        left: 0;
+        top: 26%;
         @media #{$md} {
           left: 10%;
         }
         @media #{$xs} {
           // display: none;
           display: block;
+          left: 6%;
+          top: 12%;
         }
       }
       &-2 {
-        right: 6%;
-        top: -16%;
+        right: -13%;
+        top: 35%;
         @media #{$md} {
           right: 1%;
           top: -8%;
+        }
+        @media #{$xs} {
+          right: 6%;
+          top: -16%;
         }
       }
 

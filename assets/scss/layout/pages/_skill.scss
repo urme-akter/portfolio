@@ -3,7 +3,19 @@
 /*----------------------------------------*/
 /*  7.13 Skill css
 /*----------------------------------------*/
-
+.tp-skill-area {
+  padding-top: 115px;
+  @media #{$xs} {
+    padding-top: 60px;
+    padding-bottom: 22px;
+  }
+}
+// .tp-section-subtitle {
+//   @media #{$xs} {
+//     top: -30px;
+//     left: -113px;
+//   }
+// }
 .#{$theme-prifix}-skill {
   $self: &;
   &-section-title {

@@ -12,12 +12,12 @@
       <div class="row">
         <div class="col-xl-6 col-lg-6">
           <div class="tp-portfolio-wrapper pr-30 pt-55">
-            <div class="tp-section-title-wrapper mb-60">
+            <div class="tp-section-title-wrapper">
               <div class="tp-section-title-inner tp_title_anim p-relative">
                 <span class="tp-section-subtitle tp-portfolio-subtitle"
                   >Project</span
                 >
-                <h3 class="tp-section-title tp_title_anim">Recent working</h3>
+                <h3 class="tp-section-title tp_title_anim">Recent work</h3>
               </div>
             </div>
 

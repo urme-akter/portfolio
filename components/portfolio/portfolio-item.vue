@@ -1,5 +1,5 @@
 <template>
-  <div class="tp-portfolio-item mb-70">
+  <div class="tp-portfolio-item">
     <nuxt-link :to="item.link || '#'">
       <div class="tp-portfolio-thumb img-1 w-img fix">
         <div class="tp-portfolio-thumb-img">

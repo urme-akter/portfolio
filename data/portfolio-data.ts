@@ -18,7 +18,7 @@ const portfolio_data: IPortfolioDT[] = [
   {
     id: 3,
     img: "/images/portfolio/portfolio-1.jpg",
-    title: "Portfolio(work in progress)",
+    title: "Portfolio",
     category: "View Project",
     link: "#",
   },

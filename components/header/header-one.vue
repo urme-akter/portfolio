@@ -77,8 +77,8 @@
                   <div class="tp-header-cv ml-10 d-md-block">
                     <a
                       class="tp-header-cv-btn"
-                      href="/images/cv/urme-cv.pdf"
-                      download="urme-CV.pdf"
+                      href="/cv/urme-cv.pdf"
+                      download="urme-cv.pdf"
                     >
                       <svg-download />
                     </a>
@@ -177,16 +177,11 @@
                       </span>
                     </label>
                   </div>
-                  <!-- <div class="tp-header-cv ml-10 d-none d-md-block">
-                    <a class="tp-header-cv-btn" href="/images/cv/mycv.docx">
-                      <svg-download />
-                    </a>
-                  </div> -->
                   <div class="tp-header-cv ml-10 d-md-block">
                     <a
                       class="tp-header-cv-btn"
-                      href="/images/cv/urme-cv.pdf"
-                      download="urme-CV.pdf"
+                      href="/cv/urme-cv.pdf"
+                      download="urme-cv.pdf"
                     >
                       <svg-download />
                     </a>

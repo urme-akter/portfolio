@@ -4,7 +4,7 @@ const portfolio_data: IPortfolioDT[] = [
   {
     id: 1,
     img: "/images/portfolio/portfolio-2.jpg",
-    title: "Creative Consulting",
+    title: "Creative Consulting (Worked with 1 Developer)",
     category: "View Project",
     link: "https://creativeresearch.com.bd/en/home",
   },
